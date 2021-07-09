@@ -40,10 +40,6 @@ AFRAME.registerComponent("terrain-rotation-reader", {
 });
 // Plane rotation
 AFRAME.registerComponent('plane-rotation-reader',{
-    // schema: {
-    //     speedOfRotation: {type:'number',default:0},
-    //     speedOfAscent: {type:'number',default:0}
-    // },
     init: function() {
         window.addEventListener('keydown',(event)=>{
             var planeRot = this.el.getAttribute('rotation');

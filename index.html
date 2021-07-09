@@ -4,8 +4,11 @@
   <head>
 
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 
     <script src="./Rotation.js"></script>
+    <script src="./Target.js"></script>
+    <script src="./Hurdle.js"></script>
 
   </head>
 
@@ -36,6 +39,8 @@
         scale="0.3 0.3 0.3"
         animation="property: position; to: 0 0 1000;easing:linear; loop: true; dur: 150000"
         terrain-rotation-reader
+        target
+        hurdle
       >
       </a-entity>
 
