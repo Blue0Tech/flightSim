@@ -16,6 +16,8 @@ AFRAME.registerComponent('target',{
         targetElement.setAttribute('position',position);
         targetElement.setAttribute('material','color','gold');
         targetElement.setAttribute('geometry',{primitive:'torus',radius:8});
+        targetElement.setAttribute('static-body',{shape:'sphere',sphereRadius:2});
+        targetElement.setAttribute('gameplay',{elementId:`#${id}`});
         terrainElement.append(targetElement);
     }
 });

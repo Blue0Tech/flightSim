@@ -17,6 +17,8 @@ AFRAME.registerComponent('hurdle',{
         HurdleElement.setAttribute('gltf-model','./flying_bird/scene.gltf');
         HurdleElement.setAttribute('animation-mixer',{});
         HurdleElement.setAttribute('scale',{x:500,y:500,z:500});
+        HurdleElement.setAttribute('static-body',{shape:'sphere',sphereRadius:5});
+        HurdleElement.setAttribute('gameplay',{elementId:`#${id}`});
         terrainElement.append(HurdleElement);
     }
 });

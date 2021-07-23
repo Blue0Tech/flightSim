@@ -5,10 +5,12 @@
 
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script> -->
 
     <script src="./Rotation.js"></script>
     <script src="./Target.js"></script>
     <script src="./Hurdle.js"></script>
+    <script src="./Gameplay.js"></script>
 
   </head>
 
@@ -41,6 +43,7 @@
         terrain-rotation-reader
         target
         hurdle
+        static-body
       >
       </a-entity>
 
@@ -50,6 +53,8 @@
       position="0 0.5 15"
       rotation="0 90 0"
       plane-rotation-reader
+      dynamic-body
+      gameplay
       ></a-entity>
       
     </a-scene>
